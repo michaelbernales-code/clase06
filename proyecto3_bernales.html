@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Encuesta de Satisfacción - Proyecto 3</title>
+</head>
+<body bgcolor="#f4f4f4">
+
+    <center>
+        <br>
+        <table width="500" bgcolor="white" cellpadding="20" border="1" cellspacing="0">
+            <tr>
+                <td>
+                    <center>
+                        <h2>ENCUESTA DE SATISFACCIÓN</h2>
+                        <p>Su opinión es muy importante para nosotros.</p>
+                    </center>
+                    <hr>
+
+                    <form action="/enviar_encuesta.php" method="POST">
+                        
+                        <fieldset>
+                            <legend><b>Evaluación del Servicio</b></legend>
+                            
+                            <p>¿Cómo calificaría la calidad del laboratorio hoy?</p>
+                            
+                            <input type="radio" id="excelente" name="satisfaccion" value="excelente" required>
+                            <label for="excelente">Excelente</label><br>
+
+                            <input type="radio" id="bueno" name="satisfaccion" value="bueno">
+                            <label for="bueno">Bueno</label><br>
+
+                            <input type="radio" id="regular" name="satisfaccion" value="regular">
+                            <label for="regular">Regular</label><br>
+
+                            <input type="radio" id="malo" name="satisfaccion" value="malo">
+                            <label for="malo">Malo</label>
+                        </fieldset>
+
+                        <br>
+
+                        <fieldset>
+                            <legend><b>Sugerencias y Comentarios</b></legend>
+                            <p>
+                                <label for="comentarios">¿Qué podríamos mejorar?</label><br><br>
+                                <textarea id="comentarios" name="comentarios" rows="5" cols="45" placeholder="Escriba aquí sus observaciones..."></textarea>
+                            </p>
+                        </fieldset>
+
+                        <br>
+
+                        <center>
+                            <input type="submit" value="ENVIAR ENCUESTA">
+                        </center>
+
+                    </form>
+                </td>
+            </tr>
+        </table>
+        <p><i>Michael Daniel Bernales Paredes - Ciclo III</i></p>
+    </center>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Reserva de Laboratorio - Proyecto 5</title>
+</head>
+<body bgcolor="#f8f9fa">
+
+    <center>
+        <br>
+        <table width="550" bgcolor="white" cellpadding="20" border="1" cellspacing="0">
+            <tr>
+                <td>
+                    <center>
+                        <h2>RESERVA DE LABORATORIO DE CÓMPUTO</h2>
+                        <p>Complete los detalles para la sesión técnica.</p>
+                    </center>
+                    <hr>
+
+                    <form action="/reservar.php" method="POST">
+                        
+                        <fieldset>
+                            <legend><b>Horario y Capacidad</b></legend>
+                            <p>
+                                <label for="hora_inicio">Hora de Inicio:</label><br>
+                                <input type="time" id="hora_inicio" name="hora_inicio" required>
+                            </p>
+                            
+                            <p>
+                                <label for="cantidad">Cantidad de Alumnos (Máx. 30):</label><br>
+                                <input type="number" id="cantidad" name="cantidad" min="1" max="30" placeholder="0" required>
+                            </p>
+                        </fieldset>
+
+                        <br>
+
+                        <fieldset>
+                            <legend><b>Entorno de Desarrollo</b></legend>
+                            <p>
+                                <label for="software">Software Requerido (Ctrl + clic para varios):</label><br><br>
+                                <select id="software" name="software" multiple size="4" required>
+                                    <option value="vs_code">Visual Studio Code</option>
+                                    <option value="sql_server">SQL Server 2022</option>
+                                    <option value="jdk">JDK 17 (Java)</option>
+                                    <option value="python">Python 3.10</option>
+                                    <option value="docker">Docker Desktop</option>
+                                </select>
+                            </p>
+                            <p><small><i>* Debe seleccionar al menos una herramienta.</i></small></p>
+                        </fieldset>
+
+                        <br>
+
+                        <center>
+                            <input type="submit" value="RESERVAR LABORATORIO">
+                            &nbsp;
+                            <input type="reset" value="LIMPIAR FORMULARIO">
+                        </center>
+
+                    </form>
+                </td>
+            </tr>
+        </table>
+        <p><i>Michael Daniel Bernales Paredes - IESTP Misioneros Monfortianos</i></p>
+    </center>
+
+</body>
+</html>

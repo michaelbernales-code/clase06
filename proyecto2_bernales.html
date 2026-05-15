@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>TechConf 2026 - Registro</title>
+</head>
+<body bgcolor="#e9ecef">
+
+    <center>
+        <br>
+        <table width="600" bgcolor="white" cellpadding="20" border="1" cellspacing="0">
+            <tr>
+                <td>
+                    <center>
+                        <h1>Sistema de Registro para Evento Tecnológico</h1>
+                        <p><b>TechConf 2026 - Edición Especial</b></p>
+                    </center>
+                    <hr>
+
+                    <form action="/procesar_registro.php" method="POST">
+                        
+                        <fieldset>
+                            <legend><b>Información del Asistente</b></legend>
+                            <p>
+                                <label for="nombre">Nombre Completo:</label><br>
+                                <input type="text" id="nombre" name="nombre" placeholder="Michael Daniel Bernales" required size="40">
+                            </p>
+                            <p>
+                                <label for="email">Correo Electrónico:</label><br>
+                                <input type="email" id="email" name="email" placeholder="maicolbernales19@gmail.com" required size="40">
+                            </p>
+                            <p>
+                                <label for="github">Perfil de GitHub (URL):</label><br>
+                                <input type="url" id="github" name="github" placeholder="https://github.com/maicolbernales" required size="40">
+                            </p>
+                        </fieldset>
+
+                        <br>
+
+                        <fieldset>
+                            <legend><b>Preferencias de Charlas y Talleres</b></legend>
+                            
+                            <p>
+                                <label for="charla">Seleccione una Categoría de Charla:</label><br>
+                                <select id="charla" name="charla" required>
+                                    <option value="">-- Por favor elija una opción --</option>
+                                    <optgroup label="Frontend">
+                                        <option value="html5">HTML5 Semántico y SEO</option>
+                                        <option value="css3">Arquitectura CSS Grid</option>
+                                        <option value="js">JavaScript Moderno (ES6+)</option>
+                                    </optgroup>
+                                    <optgroup label="Backend">
+                                        <option value="node">Node.js y Express</option>
+                                        <option value="sql">Optimización SQL Server</option>
+                                    </optgroup>
+                                    <optgroup label="Inteligencia Artificial">
+                                        <option value="python">Machine Learning con Python</option>
+                                        <option value="prompt">Prompt Engineering</option>
+                                    </optgroup>
+                                </select>
+                            </p>
+
+                            <p>
+                                <b>Talleres Disponibles (Seleccione uno o más):</b><br>
+                                <input type="checkbox" id="t1" name="taller" value="git">
+                                <label for="t1">Dominando Git y GitHub</label><br>
+                                
+                                <input type="checkbox" id="t2" name="taller" value="vscode">
+                                <label for="t2">Productividad en VS Code</label><br>
+                                
+                                <input type="checkbox" id="t3" name="taller" value="docker">
+                                <label for="t3">Fundamentos de Docker</label>
+                            </p>
+                        </fieldset>
+
+                        <br>
+
+                        <center>
+                            <input type="submit" value="REGISTRARSE AHORA">
+                            &nbsp;&nbsp;
+                            <input type="reset" value="LIMPIAR DATOS">
+                        </center>
+                    </form>
+                </td>
+            </tr>
+        </table>
+        <p><i>IESTP Misioneros Monfortianos - Diseño Web 2026</i></p>
+    </center>
+
+</body>
+</html>

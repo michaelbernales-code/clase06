@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Configuración de Perfil - Proyecto 4</title>
+</head>
+<body bgcolor="#e9ecef">
+
+    <center>
+        <br>
+        <table width="550" bgcolor="white" cellpadding="20" border="1" cellspacing="0">
+            <tr>
+                <td>
+                    <center>
+                        <h2>GESTIÓN DE PERFIL DE USUARIO</h2>
+                        <p>Actualice su información personal y multimedia.</p>
+                    </center>
+                    <hr>
+
+                    <form action="/actualizar_perfil.php" method="POST" enctype="multipart/form-data">
+                        
+                        <fieldset>
+                            <legend><b>Datos de Identidad</b></legend>
+                            <p>
+                                <label for="fecha_nac">Fecha de Nacimiento:</label><br>
+                                <input type="date" id="fecha_nac" name="fecha_nac" required>
+                            </p>
+                            
+                            <p>
+                                <label>Género:</label><br>
+                                <input type="radio" id="masc" name="genero" value="M">
+                                <label for="masc">Masculino</label>
+                                <input type="radio" id="fem" name="genero" value="F">
+                                <label for="fem">Femenino</label>
+                            </p>
+                        </fieldset>
+
+                        <br>
+
+                        <fieldset>
+                            <legend><b>Personalización Visual</b></legend>
+                            <p>
+                                <label for="foto">Subir Foto de Perfil:</label><br><br>
+                                <input type="file" id="foto" name="foto" accept="image/*" required>
+                            </p>
+                            <p>
+                                <small><i>Formatos permitidos: JPG, PNG. Tamaño máx: 2MB.</i></small>
+                            </p>
+                        </fieldset>
+
+                        <br>
+
+                        <center>
+                            <input type="submit" value="GUARDAR CAMBIOS">
+                            &nbsp;&nbsp;
+                            <input type="reset" value="RESETEAR">
+                        </center>
+
+                    </form>
+                </td>
+            </tr>
+        </table>
+        <p><b>Michael Daniel Bernales Paredes</b> | IESTP MM</p>
+    </center>
+
+</body>
+</html>
